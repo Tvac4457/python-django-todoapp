@@ -2,4 +2,4 @@
   name: example_parallel_step
   steps:
     - service: codeship_example
-      command: printenv
+      command: python test.py
