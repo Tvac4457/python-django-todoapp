@@ -3,11 +3,3 @@
   steps:
     - service: codeship_example
       command: python test.py
-    - service: codeship_example
-      command: python test.py
-    - service: codeship_example
-      command: python test.py
-    - service: codeship_example
-      command: python test.py
-    - service: codeship_example
-      command: python test.py
