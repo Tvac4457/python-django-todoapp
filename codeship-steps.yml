@@ -1,5 +1,5 @@
 - type: parallel
   name: example_parallel_step
   steps:
-    - service: web-codeship-example-python
-      command: python manage.py test
+    - service: codeship_example
+      command: printenv
