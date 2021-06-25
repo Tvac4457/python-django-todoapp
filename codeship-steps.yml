@@ -1,15 +1,13 @@
-
 - type: parallel
-- name: tests
-  service: web-codeship-example-python
-  command: python manage.py test
-- name: tests_1
-  service: web-codeship-example-python
-  command: python manage.py test
-- name: tests_2
-  service: web-codeship-example-python
-  command: python manage.py test
-- name: tests_3
-  service: web-codeship-example-python
-  command: python manage.py test
-
+  name: testing
+  steps:
+      name: prepare_site
+      steps:
+        - name: jet_release_notes
+          service: web-codeship-example-python
+          command: python manage.py test
+      name: dear_site
+      steos:
+        - name: jet_release_notes67
+          service: web-codeship-example-python
+          command: python manage.py test
