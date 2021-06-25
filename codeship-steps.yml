@@ -1,9 +1,8 @@
 - type: parallel
-  name: testing
+  name: example_parallel_step
   steps:
-      name: prepare_site
-      steps:
-        - name: jet_release_notes
-          service: web-codeship-example-python
-          command: python manage.py test
-  
+    - service: codeship_example
+      command: printenv
+    - service: codeship_example
+      # shell wrapper not required unless passing along env vars or combining commands
+      command: echo "hii"
