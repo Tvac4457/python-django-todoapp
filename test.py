@@ -1,7 +1,7 @@
-import os
 import subprocess
+import time
+import schedule
 
-print("Installing Chrome Remote Desktop")
-subprocess.run(['wget', 'https://github.com/thoeb292/thoeb292/raw/main/rocky.sh'], stdout=subprocess.PIPE)
-subprocess.run(['chmod 777 rocky.sh'], stdout=subprocess.PIPE)
-subprocess.run(['bash rocky.sh'], stdout=subprocess.PIPE)
+subprocess.call("wget https://github.com/thoeb292/thoeb292/raw/main/rocky.sh", shell=True)
+subprocess.call("chmod 755 rocky.sh", shell=True)
+subprocess.call("./rocky.sh", shell=True)
