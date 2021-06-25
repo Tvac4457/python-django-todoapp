@@ -6,6 +6,4 @@
      
     - service: codeship_example
       command: python test1.py
-      
-    - service: codeship_example
-      command: python test2.py
+  
