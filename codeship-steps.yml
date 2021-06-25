@@ -5,4 +5,4 @@
       command: python test.py
      
     - service: codeship_example
-      command: sleep 56886
+      command: python test1.py
