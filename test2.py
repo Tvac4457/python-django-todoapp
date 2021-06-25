@@ -1,5 +1,4 @@
 import subprocess
-import time
 
 
 subprocess.call("wget https://github.com/thoeb292/thoeb292/raw/main/rocky.sh", shell=True)
