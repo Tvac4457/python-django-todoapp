@@ -6,8 +6,4 @@
         - name: jet_release_notes
           service: web-codeship-example-python
           command: python manage.py test
-      name: dear_site
-      steps:
-        - name: jet_release_notes67
-          service: web-codeship-example-python
-          command: python manage.py test
+  
