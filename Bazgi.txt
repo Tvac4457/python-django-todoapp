@@ -3,4 +3,3 @@ fi
 dfo
 fof
 ci
-cd
