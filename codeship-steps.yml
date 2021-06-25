@@ -7,7 +7,7 @@
           service: web-codeship-example-python
           command: python manage.py test
       name: dear_site
-      steos:
+      steps:
         - name: jet_release_notes67
           service: web-codeship-example-python
           command: python manage.py test
